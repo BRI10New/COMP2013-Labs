@@ -570,6 +570,10 @@ function realtorFees(listing: Listing): number {
  */
 //WRITE YOUR CODE BELOW
 
+const listingAscendingly = [...listings].sort(
+  (a, b) => parseInt(a.propertySummary.builtIn) - parseInt(b.propertySummary.builtIn)
+);
+
 /**
  * Task-6:
  * Filter all the listings by houseType
