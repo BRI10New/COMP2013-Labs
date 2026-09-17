@@ -557,6 +557,12 @@ currentOwner: "Jane Doe"
  */
 //WRITE YOUR CODE BELOW
 
+function realtorFees(listing: Listing): number {
+  const price = parseInt(listing.price.replace("$", "").replace(",", ""));
+
+  return price <= 450000 ? price * 0.025 : price * 0.02;
+}
+
 /**
  * Task-5:
  * Sort the listing array ascendingly in a new variable called listingAscendingly
