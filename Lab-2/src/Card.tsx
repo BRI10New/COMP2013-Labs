@@ -1,5 +1,4 @@
-import React from 'react';
-import { ResortListing } from './data/data';
+import type { ResortListing } from './data/data';
 
 export function Card({ pic, country, location, rating, price }: ResortListing) {
   const goodRating = rating > 4.0;
